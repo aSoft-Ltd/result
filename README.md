@@ -1,19 +1,17 @@
 # Either
 ![badge][badge-maven] ![badge][badge-mpp] ![badge][badge-android] ![badge][badge-js] ![badge][badge-jvm]
 
-A multiplatform Either Datatype
+A Serializable Result datatype
 
 ## Samples
 ```kotlin
-val thing1: Either<Int, String> = Either.Left(1)
-val thing2: Either<Int, String> = Either.Right("jaribio")
-val thing3 = 3.asEither<Int, String>()
+val result1 : Result<Person> = Success(Person("Andy"))
 ```
 
 ## Setup
 ```kotlin
 dependencies {
-    implementation("tz.co.asoft:either:0.0.1")
+    implementation("tz.co.asoft:result:0.0.1")
 }
 ```
 
